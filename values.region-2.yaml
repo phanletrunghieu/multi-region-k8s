@@ -1,0 +1,15 @@
+mariadb:
+  primary:
+    enabled: false
+  secondary:
+    replicaCount: 1
+    master:
+      host: 192.168.56.108
+      port: 30001
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 50m
+        memory: 64Mi
